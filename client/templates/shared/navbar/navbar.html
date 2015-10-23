@@ -1,0 +1,17 @@
+<template name="NavBar">
+    <!-- Top Navbar-->
+    <div class="navbar">
+        <div class="navbar-inner">
+            <div class="left">
+                {{> yield "back"}}
+            </div>
+            <div class="center">{{_ 'brand'}}</div>
+            <div class="right">
+
+                <a href="{{pathFor 'about'}}" class="link">
+                    <i class="icon icon-bars"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</template>

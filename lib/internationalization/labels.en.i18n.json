@@ -1,0 +1,11 @@
+{
+  "brand": "Blog 7",
+  "notFound": "Page is not Found",
+  "loading": "Please wait",
+  "accessForbidden": "You have no permission to do his",
+  "submit":"Submit",
+  "cancel":"Cancel",
+
+
+  "about":"This test application to watch, how Framework 7 work with meteor"
+}

@@ -1,0 +1,19 @@
+<template name="Layout">
+    <div class="views">
+        <!-- Your main view -->
+        <div class="view view-main">
+            <!-- Navbar-->
+            {{> NavBar}}
+
+            <!-- Now we need additional "navbar-through" and "toolbar-through" classes on Pages -->
+            <div class="pages navbar-through toolbar-through">
+                {{>yield}}
+            </div>
+
+            <!-- Bottom Toolbar-->
+            {{> yield "footer"}}
+
+        </div>
+    </div>
+
+</template>
