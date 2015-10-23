@@ -1,12 +1,44 @@
 <template name="About">
-    <div data-page="about" class="page cached">
-        <div class="page-content">
+    <div data-page="about" class="page cached with-subnavbar hide-bars-on-scroll">
+        <div class="page-content hide-bars-on-scroll">
             <p>{{_ 'about'}}</p>
+            <div class="tabs">
+                <div id="tab1" class="tab active">
+                    <div class="content-block">
+                        <p>Lorem ipsum dolor ...</p>
+                        <p>In sed augue non ...</p>
+                    </div>
+                </div>
+                <div id="tab2" class="tab">
+                    <div class="content-block">
+                        <p>Donec iaculis ...</p>
+                        <p>Curabitur egestas, mi ...</p>
+                        <p>Donec iaculis posuere ...</p>
+                    </div>
+                </div>
+                <div id="tab3" class="tab">
+                    <div class="content-block">
+                        <p>Etiam non interdum erat...</p>
+                        <p>Duis ac semper risus. Suspendisse...</p>
+                        <p>Etiam non interdum erat...</p>
+                        <p>Duis ac semper risus. Suspendisse...</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     {{#contentFor "back"}}
         <a href="/" class="link">
             <i class="icon icon-back"></i>
         </a>
-        {{/contentFor}}
+    {{/contentFor}}
+    {{#contentFor "subBar"}}
+        <div class="subnavbar">
+            <div class="buttons-row">
+                <a href="#tab1" class="button tab-link active">Tab 1</a>
+                <a href="#tab2" class="button tab-link">Tab 2</a>
+                <a href="#tab3" class="button tab-link">Tab 3</a>
+            </div>
+        </div>
+    {{/contentFor}}
 </template>

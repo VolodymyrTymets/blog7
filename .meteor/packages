@@ -21,3 +21,5 @@ underscore
 iron:router
 ejson
 tap:i18n
+momentjs:moment
+accounts-password

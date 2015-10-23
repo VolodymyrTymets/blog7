@@ -5,7 +5,14 @@
   "accessForbidden": "You have no permission to do his",
   "submit":"Submit",
   "cancel":"Cancel",
+  "menuTitle":"Menu",
+  "about":"About",
+  "posts":"Posts",
+  "post":"Post",
+  "description":"Description",
+  "name":"Name",
+  "subject":"Subject",
 
 
-  "about":"This test application to watch, how Framework 7 work with meteor"
+  "aboutText":"This test application to watch, how Framework 7 work with meteor"
 }

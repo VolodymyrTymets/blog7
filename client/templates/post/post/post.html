@@ -1,0 +1,16 @@
+<template name="Post">
+    <div data-page="post" class="page cached  hide-bars-on-scroll">
+        <div class="page-content hide-bars-on-scroll">
+            <h1>{{name}}</h1>
+            <p>{{description}}</p>
+        </div>
+    </div>
+  {{#contentFor "back"}}
+      <a href="{{pathFor 'posts'}}" class="link">
+          <i class="icon icon-back"></i>
+      </a>
+  {{/contentFor}}
+  {{#contentFor "title"}}
+      {{_ 'post'}}
+  {{/contentFor}}
+</template>

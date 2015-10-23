@@ -1,0 +1,35 @@
+<template name="Posts">
+    <div data-page="posts" class="page">
+        <div class="page-content">
+            <h1>{{_ 'posts'}}</h1>
+            <div class="list-block media-list">
+                <ul>
+                    {{#each posts}}
+                        <li>
+                            <a href="{{pathFor 'post' _id=this._id}}" class="item-link item-content">
+                                <div class="item-inner">
+                                    <div class="item-title-row">
+                                        <div class="item-title">{{name}}</div>
+                                        <div class="item-after">{{fromNow createdOn}}</div>
+                                    </div>
+                                    <div class="item-subtitle">{{subject}}</div>
+                                    <div class="item-text">{{description}}</div>
+                                </div>
+                            </a>
+                        </li>
+                    {{/each}}
+                </ul>
+            </div>
+        </div>
+    </div>
+  {{#contentFor "footer"}}
+      <div class="toolbar">
+          <div class="toolbar-inner">
+              <a href="{{pathFor 'PostEditor' _id="new"}}">{{_ 'new'}}</a>
+          </div>
+      </div>
+  {{/contentFor}}
+    {{#contentFor "title"}}
+        {{_ 'brand'}}
+    {{/contentFor}}
+</template>

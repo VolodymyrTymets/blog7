@@ -1,17 +1,22 @@
 <template name="NavBar">
-    <!-- Top Navbar-->
-    <div class="navbar">
-        <div class="navbar-inner">
-            <div class="left">
-                {{> yield "back"}}
-            </div>
-            <div class="center">{{_ 'brand'}}</div>
-            <div class="right">
 
-                <a href="{{pathFor 'about'}}" class="link">
-                    <i class="icon icon-bars"></i>
-                </a>
-            </div>
-        </div>
-    </div>
+                <div class="content-block-title">{{_ 'menuTitle'}}</div>
+                <div class="list-block">
+                    <ul>
+                        <li class="item-content close-panel">
+                            <a class="close-panel" href="{{pathFor 'about'}}">
+                                <div class="item-inner">
+                                    <div class="item-title ">{{_ 'about'}}</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="item-content close-panel">
+                            <a class="close-panel" data-action="log-out" href="#">
+                                <div class="item-inner">
+                                    <div class="item-title ">Log Out</div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
 </template>
